@@ -19,9 +19,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btCalcular: Button = findViewById(R.id.btCalcular)
+
         val etValorAlcool: EditText = findViewById(R.id.edAlcool)
+
         val etValorGasolina: EditText = findViewById(R.id.edGasolina)
+
         val textResultado: TextView = findViewById(R.id.textMsg)
+
         val switchPercentual: Switch = findViewById(R.id.swPercentual)
 
         switchPercentual.setOnCheckedChangeListener { _, isChecked ->
