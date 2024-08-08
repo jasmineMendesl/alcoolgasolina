@@ -8,8 +8,10 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="550dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="550dp"
+        android:minWidth="300dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
@@ -46,29 +48,36 @@
         <EditText
             style="@style/text"
             android:id="@+id/edGasolina"
+            android:textSize="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
             android:hint="Digite o preço da gasolina:"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+        />
 
         <EditText
-            android:id="@+id/edAlcool"
             style="@style/text"
+            android:id="@+id/edAlcool"
+            android:textSize="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
             android:hint="Digite o preço da alcool:"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+        />
 
         <Switch
             android:id="@+id/swPercentual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="52dp"
             android:layout_gravity="center"
-            android:text="@string/_75" />
+            android:textSize="20sp"
+            android:text="@string/_75"
+        />
 
         <Button
             android:id="@+id/btCalcular"
